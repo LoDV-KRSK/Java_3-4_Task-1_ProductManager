@@ -28,7 +28,12 @@ public class ProductManager {
         repository.save(product);
     }
 
+    public Product[] getAll() {
+        return repository.findAll();
+    }
+
     public boolean matches(Product product, String search) {
         return product.getName().contains(search);
     }
+
 }
