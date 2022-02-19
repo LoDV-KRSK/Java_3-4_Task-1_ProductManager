@@ -33,7 +33,6 @@ class ProductRepositoryTest {
         assertArrayEquals(expected, actual);
     }
 
-
     @Test
     void shouldDeletedByIDOneProduct() {
         repository.save(book1);
